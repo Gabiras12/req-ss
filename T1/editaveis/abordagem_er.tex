@@ -4,14 +4,14 @@ Nos dias atuais, a necessidade de automatização de processos se faz cada vez m
 presente. Processos são essenciais dentro de qualquer organização em qualquer área
 de atuação, inclusive em uma das áreas mais recentes, que a produção de software.
 A definição de processos de desenvolvimento de software vem com o objetivo de aumentar
-a produtividade e diminuir os riscos de um projeto.
+a produtividade e diminuir os riscos de um projeto\cite{VIEIRA}.
 
 Com o grande crescimento da demanda na produção de software
 na atualidade os prazos estão cada vez mais curtos e cobrança relacionada a qualidade
 estão cada vez maiores. A qualidade de um produto de software está diretamente ligada
 a melhor forma de atender as necessidades do cliente, o que torna um produto totalmente dinâmico.
 Uma vez que a natureza do produto é dinâmica existem grandes dificuldades no gerenciamento
-do desenvolvimento, por exemplo: a essência volátil dos requisitos do cliente.
+do desenvolvimento, por exemplo: a essência volátil dos requisitos do cliente\cite{TAVARES}.
 
 O produto de software também possui outra caracteristica única, é totalmente desenvolvido
 por pessoas, o que gera outra gama de variáveis que podem causar risco e mudanças
@@ -32,7 +32,7 @@ juistificativa da escolha de atividades de cada um.
 
 O RUP foi criado pela Rational Software Corporation, é uma metodologia proprietaria,
 que tem o objetivo de aumentar a produtividade focando na arquitetura do sistema
-e na definição de seu processo, especificando regras e papéis.
+e na definição de seu processo, especificando regras e papéis\cite{IBM}.
 
 Surgiu como uma abordagem inovadora pelo seu grande grau de customização, mas complexo,
 recomendado para grandes equipes e grandes projetos \cite{KRUCHTEN}.
@@ -63,7 +63,7 @@ na tomada de decisões durante o desenvolvimento do projeto.
 
 Sendo assim, esse conjunto de práticas levam a maior adaptação a mudanças, possivelmente
 amenizando os riscos na execução do projeto, pelo estreitamento entre a equipe do projeto
-e o cliente. (BOEHM, 2002)
+e o cliente \cite{BOEHM}.
 
 O SAFe é composto por tres níveis organizacionais Portifólio(Estratégico),
 Programa(Tático), Time(Operacional), e buscam seguir os seguintes princípios:
@@ -82,7 +82,106 @@ Programa(Tático), Time(Operacional), e buscam seguir os seguintes princípios:
   \item Descentralizamos a tomada de decisão
 \end{itemize}
 
-\section{MPS.BR}
+
+\section{Modelo de Maturidade}
+
+Pode-se entender como conceito chave da maturidade de processos, a forma sistemática
+a qual times considerados maduros realizam suas atividades, em comparação com o modo
+de agir de times imaturos, que geralmente utilizam de abordagens criadas espontaneamente.
+
+Em software, os modelo de maturidade são utilizados para:
+
+\begin{enumerate}
+  \item Avaliar o processo
+  \item Melhoria de produtividade
+  \item Melhoria contínua
+\end{enumerate}
+
+\subsection{Modelo CMMI}
+
+O CMMI é um modelo que serve de base para o desenvolvimento e a avaliação da maturidade de uma organização.
+
+O CMMI aborda a gerenciamento de requisitos, manipulação de riscos, medição de desempenho,
+planejamento de trabalho e tomada de decisão.
+
+No CMMI, um time pode escolher duas representações para a melhoria dos seus processos,
+por estágio ou continua.
+
+Em estágios, têm-se um caminho específico para a melhoria, como pode ser visto na figura seguinte:
+
+\begin{figure}[H]
+    \centering
+  \includegraphics[keepaspectratio=true,scale=0.3]{figuras/cmmi.eps}
+    \caption{Visão geral do CMMI}
+    \label{fig:cmmi}
+\end{figure}
+
+\subsection{MPS.BR}
+
+O modelo MPS-BR é dividido em níveis de maturidade, como ilustra a image x.
+
+\begin{figure}[H]
+    \centering
+  \includegraphics[keepaspectratio=true,scale=0.3]{figuras/mpsbr.eps}
+    \caption{Visão geral do MPS.BR}
+    \label{fig:mps}
+\end{figure}
+
+Cada nível de maturidade possui certas áreas de processos onde são analisados, sendo divididos
+em três tipo.
+
+\textbf{Processos Fundamentais}:
+  \begin{itemize}
+    \item Aquisição
+    \item Gerência de requisitos
+    \item Desenvolvimento de requisitos
+    \item Solução técnica
+    \item Integração do produto
+    \item Instalação do produto
+    \item Liberação do produto
+  \end{itemize}
+
+
+\textbf{Processos Organizacionais}:
+\begin{itemize}
+  \item Gerência de projeto
+  \item Adaptação do processo para gerência de projeto
+  \item Análise de decisão e resolução
+  \item Gerência de riscos
+  \item Avaliação e melhoria do processo organizacional
+  \item Definição do processo organizacional
+  \item Desempenho do processo organizacional
+  \item Gerência quantitativa do projeto
+  \item Análise e resolução de causas
+  \item Inovação e implantação na organização
+\end{itemize}
+
+\textbf{Processos de Apoio}:
+\begin{itemize}
+  \item Garantia de qualidade
+  \item Gerência de configuração
+  \item Validação
+  \item Medição
+  \item Verificação
+  \item Treinamento
+\end{itemize}
+
+Cada nível de maturação ainda apresenta uma quantidade de capacidades a serem analisadas
+
+As engenharia de requisitos é abordada nos níveis G e D do MPS-BR, como Gerência de
+Requisitos e Desenvolvimento de Requisitos respectivamente.
+
+\begin{description}
+  \item[Gerência de Requisitos] \hfill \\
+  Busca gerenciar os requisitos do produto e do projeto, assim como identificar
+  inconsistencias entre os requisitos, os planos de projeto e os produtos de trabalho do projeto.
+  \item[Desenvolvimento de Requisitos] \hfill \\
+  Busca definer os requisitos do cliente, do produto e dos components do produto.
+\end{description}
+
+
+
+
 
 \section{Mapeamento do Contexto vs Abordagens}
 
@@ -127,4 +226,21 @@ viável, porém o aspecto de equipe 3 apresenta um risco ao projeto caso não se
 devidamente utilizado no processo do projeto. Tornando assim evidente a necessidade
 de uma abordagem híbrida.
 
-A partir dessa abordagem híbrida foi criado o processo descrito na sessão 4.
+Os modelos de maturidade abordados possuem diversas características em comum tanto nas fases
+de implementação quanto nas fases organizacionais, as diferenças são apresentadas no que diz
+respeito aos níveis de maturidade que são abordados em diferentes escalas quanto a medição e identificação.
+
+No projeto em questão, optou-se por utilizar uma abordagem que seguisse o modelo de maturidade MPS-BR,
+dentre as vantagens deste modelo em relação ao CMMI, pode-se citar que o MPS-BR é mais adequado a
+realidade brasileira, além de ser focado em pequenas e médias empresas, encaixando-se
+perfeitamente ao contexto presente.
+
+O MPS-BR se torna muito mais acessível ao presente projeto em comparação ao CMMI,
+que geralmente tem custo entre duzentos mil reais à um milhão de reais e requer um
+certo tempo para se chegar aos níveis de maturidade mais altos.
+
+Por outro lado, observa-se que a certificação MPS-BR não é suficiente para tornar
+a equipe competitiva internacionalmente, fato que não prejudicará o time, visto sua
+atuação somente no mercado brasileiro e no projeto em questão.
+
+A partir dessa abordagem híbrida foi criado o processo descrito na sessão \ref{cap4}.

@@ -1,16 +1,16 @@
-\graphicspath{ {figuras/} }
 \chapter[Processo de Engenharia de Requisitos]{Processo de Engenharia de Requisitos}\label{cap4}
 
 Esse processo foi desenhado utilizando ferramenta ``\textit{BIZAGI modeler}''. Houveram 5 evoluções,
-presentes no apêndice A, a partir do primeiro esboço até chegar a versão apresentada na imagem \ref{fig:processo}.
+presentes no apêndice \ref{apendice:evolution}, a partir do primeiro esboço até chegar a versão apresentada na imagem \ref{fig:processo}.
 
 Como foi descrito no capítulo \ref{cap3} o processo criado foi estruturado baseando-se no
 SAFe mantendo os três níveis estruturais do framework, portifólio, programa e time
 que estão detalhados na sessão \ref{safe}.
 
-A manutenção da rastreabilidade dos requisitos, teve papel fundamental para a criação deste processo,
-uma vez que são definidos vários níveis de requisitos e o processo para manter essa
-rastreabilidade no SAFe não está totalmente definido em atividades.
+A manutenção da rastreabilidade dos requisitos, tem papel fundamental para a criação deste processo,
+entretando no processo SAFe não há a definição plena da manutenbilidade da rastreabilidade entre os
+vários níveis. Portanto há a necessidade de criação de uma adaptação, para isso utiliza-se de
+outro processo base, o RUP.
 
 É fundamental destacar que o problema da escolha de um abordagem não esta em considerar
 a mutabilidade dos requisitos e sim em como tratar essas mudanças que são inevitáveis.
@@ -18,6 +18,12 @@ Pensando nisso foram adicionadas atividades de gerência de mudanças baseadas n
 para sanar um possível risco na comunicação e gerência do projeto devido a não experiência
 de trabalho entre os membros do grupo. Esse processo ocorre de forma eventual e paralela
 e será detalhado na sessão \ref{sec:gerencia}.
+
+
+
+[Papeis]
+[Artefatos]
+[Atividades]
 
 \begin{figure}[H]
     \centering
@@ -40,8 +46,62 @@ e Revisar e Analisar. As técnicas utilizadas para a execução de cada atividad
 a análise documental, workshops e Brainstorms.
 
 \subsubsection{Processo}
+
+\begin{figure}[H]
+    \centering
+  \includegraphics[keepaspectratio=true,scale=0.5]{figuras/portifa.eps}
+    \caption{Visão geral do nível de portifólio.}
+    \label{fig:portifa}
+\end{figure}
+
 \subsubsection{Papéis}
+
+\textbf{Gerente de Portfólio}: Possui a mais alto nível de decisão do processo, buscam compreender
+a estratégia da empresa, tecnologia e restrições. No nosso contexto ele terá também
+a função de Dono do Épico, que é responsável pela condução dos épicos para identificação
+através da análise do processo e do sistema Kanban. Quando aceito para implementação,
+trabalha com a equipe de desenvolvimento e de gestão de produtos para iniciar as atividades
+de desenvolvimento necessárias para contemplar o épico.
+
 \subsubsection{Artefatos}
+
+
+
+\begin{description}
+  \item[A - Processo do cliente:]
+  Artefato de entrada que será fornecido pelo cliente ao Gerente de portifólio.
+  Contém o processo otimizado, da organização do cliente, modelado na notação BPMN.\cite{BPMN}
+  \item [B - Contexto do cliente]
+  Artefato fornecido pelo cliente, que descreve resumidamente o contexto do problema
+  a ser solucionado e uma síntese do motivo da contratação para o desenvolvimento de software.
+  \item [C - Tema de investimento: ]
+  Representa os objetivos do financiamento da solução, área que irá atuar e valores da empresa.
+  É representado por uma pequena proposição com uma breve descrição. É o requisito de
+  mais alto nível no processo. Compoem o portifolio backlog.\cite{themes}
+  \item [D - Lista de Épicos:]
+  Os épicos representam uma iniciativa de negócio, pode ser algo que gere alto valor
+  para o cliente ou alto valor para o desenvolvimento de software, como inovações de arquitetura.
+  É um requisito ainda de alto nível e deve ser sempre coletado, analisado e refinado.
+  Possui três níveis de dimensão
+    \begin{enumerate}
+      \item \textbf{Tempo: } A implementação pode levar muitas iterações e releases.
+      \item \textbf{Escopo: } Afeta vários níveis no projeto, por ser alto nível a mudança
+      de um épico pode ocasionar um grande impacto e custar muito para a organização.
+      \item \textbf{Negócio: } Afeta vários departamentos na área de negócios, representa
+      a entrega de valor direta para o cliente no portifólio.
+    \end{enumerate}
+  A lista de épicos é o resultado de um brainstorm de possíveis épicos para serem entregues,
+  que passarão depois por uma atividade para filtrar e analisar a consistensia dos mesmos.
+  \item [E - Backlog do Portifólio]
+  Backlog de Portifólio: É uma pilha que contem os épicos detalhados e organizados
+  por ordem de prioridade de implementação. É feito uma estimativa em pontuações
+  que representam a complexidade do épico. Para fazer essa estimativa o épico deve
+  ser detalhado para facilitar a identificação de possível divisão desse épico em
+  outros épicos, e a análise da consistência do mesmo.\cite{epics}
+
+  Para estimar o valor do épico, pode ser utilizado o template no anexo \ref{apendice:templates}
+\end{description}
+
 \subsubsection{Atividades}
 
   \begin{table}[H]
@@ -90,9 +150,56 @@ a análise documental, workshops e Brainstorms.
   \end{table}
 
   \subsection{Programa}
+
+  Nesse nível do processo, foram definidas as atividades Levantas Requistos não funcionais,
+  Selecionar Épicos para a Iteração, Levantar Features, Levantar Histórias de Usuário e Planejar Releases.
+  Este etapa conscite em indentificar requisitos palpáveis e a partir disso estabelecer estratégias
+  juntamente com o nível de time para a implementação da solução de software.
+
   \subsubsection{Processo}
+
+  \begin{figure}[H]
+      \centering
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/programa.eps}
+      \caption{Visão geral do nível de programa.}
+      \label{fig:progama}
+  \end{figure}
+
   \subsubsection{Papéis}
+
+    \textbf{Gerente do Produto}: Responsável por definir e priorizar o backlog de programa.
+    Além de ser responsável pela construção, manutenção e apresentação da Visão e Roadmap
+    e gerenciar o conteúdo da realease.
+
   \subsubsection{Artefatos}
+
+  \begin{description}
+    \item[A - Visão]
+    O visão representa um descrição da soluçã a ser desenvolvida , baseade nas necessidades
+    dos stakeholders. Contem uma coleção inicial de features , requisitos não funcionais,
+    regras , padrões que devem ser seguidos , e restrições do projeto. Contem uma sintese dos
+    objetivos a serem atingidos no programa e servirá de base para os seguintes níveis.\cite{vision}
+    \item[B - Épico da Iteração]
+    É apenas a representação do épico do backlog de portifólio que foi selecionado
+    para passar pela a iteração de detalhamento e especificação.
+    \item[C - Roadmap]
+    O roadmap estabilisa e comunica e alinha a interação entre o nível de time e programa,
+    tem o objetivo de demonstrar de forma transparente, natural e em alto nível, as entregas
+    em uma linha do tempo. Geralmente representa de 3 a 6 meses de planejamento, composto objetivos
+    e o que será desenvolvido em cada release. A previsão é gerada de forma balanceada e cuidadosa,
+    para evitar possíveis retrabalhos. \cite{roadmap}
+    \item[D - Backlog do Programa]
+    Mantém em um único lugar as funcionalidades que deverão ser desenvolvidas nas releases
+    e que entrarão no ágile release train. É considerada a chave do sucesso para economia
+    do nível de programa. Um backlog bem organizado diminui os atrazos e o custo do desenvolvimento.
+    É utilizado como base para gerar o roadmap e como a base do nível de time\cite{programbacklog}.
+    A priorização das features são realizadas utilizando a prática de o trabalho mais pesado e
+    mais curto vem primeiro. Para medir o peso do trabalho é utilizada a formula abaixo  o
+    uma tabela de comparação modelo presente no anexo 2\cite{wsjf}.
+
+  \end{description}
+
+
   \subsubsection{Atividades}
 
   \begin{table}[H]
@@ -170,10 +277,50 @@ a análise documental, workshops e Brainstorms.
       \label{tabela:atividade8}
   \end{table}
 
-  \subsection{Time}
+\subsection{Time}
   \subsubsection{Processo}
+
+  \begin{figure}[H]
+      \centering
+    \includegraphics[keepaspectratio=true,scale=0.5]{figuras/time.eps}
+      \caption{Visão geral do nível de time.}
+      \label{fig:time}
+  \end{figure}
+
   \subsubsection{Papéis}
+
+\textbf{Dono do Produto}: Responsável por definir, manter e priorizar o backlog do time,
+elaborar e validade as histórias de usuário, participar do planejamento e validação
+da Sprint de tal modo a agilizar a execução de programas prioritários, mantendo a
+integridade conceitual e técnica dos recursos ou componentes do time. Possui um papel
+significativo no que se diz respeito a qualidade.
+
+\textbf{Scrum Master}: Responsável por facilitar as interações da equipe e ajuda
+a dirigir os esforços da equipe para a melhora continua.
+
+\textbf{Team}: São os indivíduos capazes de definir, construir e testar em uma interação
+de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Produto.
+
   \subsubsection{Artefatos}
+
+\begin{description}
+  \item[A - Backlog do Time]
+  Tem como conteúdo, basicamente todas as coisa que o time deve fazer para gerar
+  os pacotes de software e entregar valor para o cliente. É composto por histórias
+  de usuário, histórias técnicas, defeitos, necessidades de infraestrutura, necessidades
+  do time, refatoração, e qualquer outra coisa que o time precisa fazer. Muitas entidades
+  contribuem para a geração do backlog do time como representado na imagem abaixo:
+
+  Nota-se que na criação do backlog de time as features são ramificadas em pequenas histórias.
+
+
+  \item[B - Lista de melhorias e Correções]
+   E gerada para registrar evoluções nos artefatos que foram obtidas através de feedbacks
+  de algum artefato já entregue. Presente em vários níveis.
+
+\end{description}
+
+
   \subsubsection{Atividades}
 
   \begin{table}[H]
@@ -284,7 +431,22 @@ a análise documental, workshops e Brainstorms.
 \subsection{Gerência de Mudança}\label{sec:gerencia}
 \subsubsection{Processo}
 \subsubsection{Papéis}
+
+  \textbf{GERENTE DE PORTFÓLIO}: No tratamento de mudanças, não haverá um papel especifico devido
+à dimensão do projeto, cabendo a ele a responsabilidade de também gerir mudanças, caso necessário.
+
 \subsubsection{Artefatos}
+
+\begin{description}
+  \item[A - Solicitação de Mudança: ]
+  Lista com as mudanças que necessitam ser analisadas pela gerência, a lista contém
+  uma síntese detalhando porque a mudança foi solicitada.
+  \item [B - Mudanças: ] Representa a rastreabilidade dessa mudança, detalhando em
+  quais níveis ela irá impactar e qual será o custo para efetivar essa mudança.
+  \item [C - Relatório de Avaliação de mundanças: ] O relatório explica o motivo e impactos da aceite
+  ou recusa de uma mudança, e serve como base para realização das mudanças.
+\end{description}
+
 \subsubsection{Atividades}
 
 \begin{table}[H]
@@ -361,9 +523,3 @@ a análise documental, workshops e Brainstorms.
     \caption{Legenda da Tabela}
     \label{tabela:atividade20}
 \end{table}
-
-\subsection{Desenvolvimento}
-\subsubsection{Processo}
-\subsubsection{Papéis}
-\subsubsection{Artefatos}
-\subsubsection{Atividades}
