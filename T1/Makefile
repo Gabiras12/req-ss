@@ -42,6 +42,7 @@ $(TARGET): $(MAIN_FILE) $(SOURCES) bibliografia.bib
 	$(DVIPS) $(DVI_FILE)
 	$(PS2PDF) $(PS_FILE)
 	@cp $(PDF_FILE) $(TARGET)
+	open $(TARGET)
 
 clean:
 	rm -f *~ *.dvi *.ps *.backup *.aux *.log
