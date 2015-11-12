@@ -2,11 +2,11 @@
 
 Esse processo foi desenhado utilizando ferramenta ``\textit{BIZAGI modeler}''. Houveram 5 evoluções,
 presentes no apêndice \ref{apendice:evolution}, a partir do primeiro esboço até chegar a versão apresentada na imagem \ref{fig:processo}. Para criação das atividades do processo
-a equipe criou um framework de mapeamento entre Abordagens de Engenharia de Software, Modelos de Maturidade e Atividades Fundamentiais da Engenharia de Requisitos. Este framework se encontra
+a equipe criou um \textit{framework} de mapeamento entre Abordagens de Engenharia de \textit{Software}, Modelos de Maturidade e Atividades Fundamentiais da Engenharia de Requisitos. Este framework se encontra
 no apêndice \ref{apendice:mapeamento} justificando a presença de cada atividade.
 
 Como foi descrito no capítulo \ref{cap3} o processo criado foi estruturado baseando-se no
-SAFe mantendo os três níveis estruturais do framework, portifólio, programa e time
+SAFe mantendo os três níveis estruturais do \textit{framework}, portfólio, programa e time
 que estão detalhados na sessão \ref{safe}.
 
 A manutenção da rastreabilidade dos requisitos, tem papel fundamental para a criação deste processo,
@@ -21,10 +21,6 @@ para sanar um possível risco na comunicação e gerência do projeto devido a n
 de trabalho entre os membros do grupo. Esse processo ocorre de forma eventual e paralela
 e será detalhado na sessão \ref{sec:gerencia}.
 
-[Papeis]
-[Artefatos]
-[Atividades]
-
 \begin{figure}[H]
     \centering
 	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/Processo_05.eps}
@@ -34,27 +30,27 @@ e será detalhado na sessão \ref{sec:gerencia}.
 
 \section{Scaled Agile Framework}\label{safe}
 
-Nessa sessão serão descritos os níveis que compoem o SAFe(Portifólio, Programa e Time).
+Nessa sessão serão descritos os níveis que compoem o SAFe(portfólio, Programa e Time).
 Sendo mostrado o objetivo cada nível como também as atividades que a compoem.
 
-\subsection{Portifólio}
+\section{portfólio}
 
 No processo criado nesse trabalho, esse nível tem como objetivo levantar e estabelecer
 uma abstração de alto nível dos requisitos do negócio. Esse levantamento ocorrerá
 por meio da efetuação das atividades Entender Contexto do Cliente e Levantar Épicos
 e Revisar e Analisar. As técnicas utilizadas para a execução de cada atividade serão
-a análise documental, workshops e Brainstorms.
+a análise documental, \textit{Workshop} e Brainstorms.
 
-\subsubsection{Processo}
+\subsection{Processo}
 
 \begin{figure}[H]
     \centering
   \includegraphics[keepaspectratio=true,scale=0.5]{figuras/portifa.eps}
-    \caption{Visão geral do nível de portifólio.}
+    \caption{Visão geral do nível de portfólio.}
     \label{fig:portifa}
 \end{figure}
 
-\subsubsection{Papéis}
+\subsection{Papéis}
 
 \textbf{Gerente de Portfólio}: Possui a mais alto nível de decisão do processo, buscam compreender
 a estratégia da empresa, tecnologia e restrições. No nosso contexto ele terá também
@@ -63,13 +59,13 @@ através da análise do processo e do sistema Kanban. Quando aceito para impleme
 trabalha com a equipe de desenvolvimento e de gestão de produtos para iniciar as atividades
 de desenvolvimento necessárias para contemplar o épico.
 
-\subsubsection{Artefatos}
+\subsection{Artefatos}
 
 
 
 \begin{description}
   \item[A - Processo do cliente:]
-  Artefato de entrada que será fornecido pelo cliente ao Gerente de portifólio.
+  Artefato de entrada que será fornecido pelo cliente ao Gerente de portfólio.
   Contém o processo otimizado, da organização do cliente, modelado na notação BPMN.\cite{BPMN}
   \item [B - Contexto do cliente]
   Artefato fornecido pelo cliente, que descreve resumidamente o contexto do problema
@@ -88,21 +84,21 @@ de desenvolvimento necessárias para contemplar o épico.
       \item \textbf{Escopo: } Afeta vários níveis no projeto, por ser alto nível a mudança
       de um épico pode ocasionar um grande impacto e custar muito para a organização.
       \item \textbf{Negócio: } Afeta vários departamentos na área de negócios, representa
-      a entrega de valor direta para o cliente no portifólio.
+      a entrega de valor direta para o cliente no portfólio.
     \end{enumerate}
   A lista de épicos é o resultado de um brainstorm de possíveis épicos para serem entregues,
   que passarão depois por uma atividade para filtrar e analisar a consistensia dos mesmos.
-  \item [E - Backlog do Portifólio]
-  Backlog de Portifólio: É uma pilha que contem os épicos detalhados e organizados
+  \item [E - \textit{Backlog} do Portfólio]
+  \textit{Backlog} de portfólio: É uma pilha que contem os épicos detalhados e organizados
   por ordem de prioridade de implementação. É feito uma estimativa em pontuações
   que representam a complexidade do épico. Para fazer essa estimativa o épico deve
   ser detalhado para facilitar a identificação de possível divisão desse épico em
   outros épicos, e a análise da consistência do mesmo.\cite{epics}
 
-  Para estimar o valor do épico, pode ser utilizado o template no anexo \ref{apendice:templates}
+  Para estimar o valor do épico, pode ser utilizado o template no apêndice \ref{apendice:templates}
 \end{description}
 
-\subsubsection{Atividades}
+\subsection{Atividades}
 
   \begin{table}[H]
     \centering
@@ -110,9 +106,9 @@ de desenvolvimento necessárias para contemplar o épico.
         \hline
         ID       & 01   \\ \hline
         Nome     & Entender Contexto do Cliente   \\ \hline
-        Objetivo & Serão realizadas reuniões entre o cliente e o gerente de portifólio para um primeiro contato com o objetivo de entender e esclarecer o contexto do problema. \\ \hline
+        Objetivo & Serão realizadas reuniões entre o cliente e o gerente de portfólio para um primeiro contato com o objetivo de entender e esclarecer o contexto do problema. \\ \hline
         Entradas & Processo do Cliente, Contexto do Cliente.   \\ \hline
-        Saídas   & Tema de Ivestimento. \\ \hline
+        Saídas   & Tema de Investimento. \\ \hline
         Papel Responsável   & Gerente de Portfólio. \\ \hline
       \end{tabular}
       \caption{Atividade: Entender Contexto do Cliente }
@@ -125,7 +121,7 @@ de desenvolvimento necessárias para contemplar o épico.
         \hline
         ID       & 02   \\ \hline
         Nome     & Levantar Épicos   \\ \hline
-        Objetivo & Brainstorm de ideias relacionadas ao tema de investimento e escrita de épicos. \\ \hline
+        Objetivo & \textit{Brainstorm} de ideias relacionadas ao tema de investimento e escrita de épicos. \\ \hline
         Entradas & Tema de Investimento   \\ \hline
         Saídas   & Lista de Épicos \\ \hline
         Papel Responsável   & Gerente de Portfólio. \\ \hline
@@ -140,23 +136,23 @@ de desenvolvimento necessárias para contemplar o épico.
         \hline
         ID       & 03   \\ \hline
         Nome     & Selecionar e Detalhar Épicos   \\ \hline
-        Objetivo & Os épicos levantados são filtrados, pois podem surgir épicos não alinhasdos com o tema de investimentos. Serão também detalhados, analisados e revisados. Algumas features podem surgir e irão compor a versão inicial do Backlog do Programa. Só é possível a saída da atividade após a aprovação do Gerente. Aqui acontece o primeiro ponto de verificaçã o de mudanças e processo. \\ \hline
+        Objetivo & Os épicos levantados são filtrados, pois podem surgir épicos não alinhasdos com o tema de investimentos. Serão também detalhados, analisados e revisados. Algumas \textit{Features}  podem surgir e irão compor a versão inicial do \textit{Backlog} do Programa. Só é possível a saída da atividade após a aprovação do Gerente. Aqui acontece o primeiro ponto de verificaçã o de mudanças e processo. \\ \hline
         Entradas & Lista de Épicos   \\ \hline
-        Saídas   & Backlog do Programa, Backlog do Portifólio(Atualizado). \\ \hline
+        Saídas   & \textit{Backlog} do Programa, \textit{Backlog} do portfólio(Atualizado). \\ \hline
         Papel Responsável   & Gerente de Portfólio. \\ \hline
       \end{tabular}
-      \caption{Atividade: Revisar e Analisar}
+      \caption{Atividade: Selecionar e Detalhar Épicos}
       \label{tabela:atividade3}
   \end{table}
 
-  \subsection{Programa}
+  \section{Programa}
 
   Nesse nível do processo, foram definidas as atividades Levantas Requistos não funcionais,
-  Selecionar Épicos para a Iteração, Levantar Features, Levantar Histórias de Usuário e Planejar Releases.
+  Selecionar Épicos para a Iteração, Levantar \textit{Features} , Levantar Histórias de Usuário e Planejar Releases.
   Este etapa conscite em indentificar requisitos palpáveis e a partir disso estabelecer estratégias
   juntamente com o nível de time para a implementação da solução de software.
 
-  \subsubsection{Processo}
+  \subsection{Processo}
 
   \begin{figure}[H]
       \centering
@@ -165,37 +161,37 @@ de desenvolvimento necessárias para contemplar o épico.
       \label{fig:progama}
   \end{figure}
 
-  \subsubsection{Papéis}
+  \subsection{Papéis}
 
-    \textbf{Gerente do Produto}: Responsável por definir e priorizar o backlog de programa.
+    \textbf{Gerente do Produto}: Responsável por definir e priorizar o \textit{Backlog} de programa.
     Além de ser responsável pela construção, manutenção e apresentação da Visão e Roadmap
     e gerenciar o conteúdo da realease.
 
-  \subsubsection{Artefatos}
+  \subsection{Artefatos}
 
   \begin{description}
     \item[A - Visão]
     O visão representa um descrição da soluçã a ser desenvolvida , baseade nas necessidades
-    dos stakeholders. Contem uma coleção inicial de features , requisitos não funcionais,
+    dos stakeholders. Contem uma coleção inicial de \textit{Features}  , requisitos não funcionais,
     regras , padrões que devem ser seguidos , e restrições do projeto. Contem uma sintese dos
     objetivos a serem atingidos no programa e servirá de base para os seguintes níveis.\cite{vision}
     \item[B - Épico da Iteração]
-    É apenas a representação do épico do backlog de portifólio que foi selecionado
+    É apenas a representação do épico do \textit{Backlog} de portfólio que foi selecionado
     para passar pela a iteração de detalhamento e especificação.
     \item[C - Roadmap]
-    O roadmap estabilisa e comunica e alinha a interação entre o nível de time e programa,
+    O \textit{Roadmap}estabilisa e comunica e alinha a interação entre o nível de time e programa,
     tem o objetivo de demonstrar de forma transparente, natural e em alto nível, as entregas
     em uma linha do tempo. Geralmente representa de 3 a 6 meses de planejamento, composto objetivos
     e o que será desenvolvido em cada release. A previsão é gerada de forma balanceada e cuidadosa,
     para evitar possíveis retrabalhos. \cite{roadmap}
-    \item[D - Backlog do Programa]
+    \item[D - \textit{Backlog} do Programa]
     Mantém em um único lugar as funcionalidades que deverão ser desenvolvidas nas releases
     e que entrarão no ágile release train. É considerada a chave do sucesso para economia
-    do nível de programa. Um backlog bem organizado diminui os atrazos e o custo do desenvolvimento.
-    É utilizado como base para gerar o roadmap e como a base do nível de time\cite{programbacklog}.
-    A priorização das features são realizadas utilizando a prática de o trabalho mais pesado e
+    do nível de programa. Um \textit{Backlog} bem organizado diminui os atrazos e o custo do desenvolvimento.
+    É utilizado como base para gerar o \textit{Roadmap}e como a base do nível de time\cite{programbacklog}.
+    A priorização das \textit{Features}  são realizadas utilizando a prática de o trabalho mais pesado e
     mais curto vem primeiro. Para medir o peso do trabalho é utilizada a formula da imagem abaixo  e também
-    uma tabela de comparação modelo presente no anexo X\cite{wsjf}.
+    uma tabela de comparação modelo presente no apêndice X\cite{wsjf}.
 
     \begin{figure}[H]
         \centering
@@ -208,7 +204,7 @@ de desenvolvimento necessárias para contemplar o épico.
   \end{description}
 
 
-  \subsubsection{Atividades}
+  \subsection{Atividades}
 
   \begin{table}[H]
     \centering
@@ -217,7 +213,7 @@ de desenvolvimento necessárias para contemplar o épico.
         ID       & 04   \\ \hline
         Nome     & Levantar Requisitos Não Funcionais   \\ \hline
         Objetivo & Serão realizadas reuniões entre o cliente e o time. Serão levantas as melhores condições para a solução. Ex: Tecnologia, Plataforma, Usabilidade. Também serão levantadas as restrições e padrões que o projeto deve seguir. \\ \hline
-        Entradas & Backlog do Programa e Backlog do Portifólio.   \\ \hline
+        Entradas & \textit{Backlog} do Programa e \textit{Backlog} do portfólio.   \\ \hline
         Saídas   & Visão \\ \hline
         Papel Responsável   & Gerente de Programa. \\ \hline
       \end{tabular}
@@ -231,8 +227,8 @@ de desenvolvimento necessárias para contemplar o épico.
         \hline
         ID       & 05   \\ \hline
         Nome     & Selecionar Épico para Iteração   \\ \hline
-        Objetivo & Atividade de priorização dos épicos, onde serão selecionados os épicos a serem abordados na iteração de acordo com o backlog do portifólio. \\ \hline
-        Entradas & Backlog do Portifólio.\\ \hline
+        Objetivo & Atividade de priorização dos épicos, onde serão selecionados os épicos a serem abordados na iteração de acordo com o \textit{Backlog} do portfólio. \\ \hline
+        Entradas & \textit{Backlog} do portfólio.\\ \hline
         Saídas   & Épico da iteração \\ \hline
         Papel Responsável   & Gerente de Programa. \\ \hline
       \end{tabular}
@@ -245,13 +241,13 @@ de desenvolvimento necessárias para contemplar o épico.
       \begin{tabular}{| m{5em} | m{10cm} |}
         \hline
         ID       & 06   \\ \hline
-        Nome     & Levantar de Features   \\ \hline
-        Objetivo & Atividade para levantar detalhadamente as features que estão relacionadas aos épicos selecionados. \\ \hline
+        Nome     & Levantar de \textit{Features}    \\ \hline
+        Objetivo & Atividade para levantar detalhadamente as \textit{Features}  que estão relacionadas aos épicos selecionados. \\ \hline
         Entradas & Épico da Iteração\\ \hline
-        Saídas   & Backlog do Programa \\ \hline
+        Saídas   & \textit{Backlog} do Programa \\ \hline
         Papel Responsável   & Gerente de Programa. \\ \hline
       \end{tabular}
-      \caption{Atividade: Levantar de Features}
+      \caption{Atividade: Levantar de \textit{Features} }
       \label{tabela:atividade6}
   \end{table}
 
@@ -260,13 +256,13 @@ de desenvolvimento necessárias para contemplar o épico.
       \begin{tabular}{| m{5em} | m{10cm} |}
         \hline
         ID       & 07   \\ \hline
-        Nome     & Levatar Histórias da Release  \\ \hline
-        Objetivo & Atividade para levantar histórias de usuários, relacionadas as features levantadas, em alto nível, sem detalhamentos. Aqui é necessária a aprovação do Gerente para sair da atividade.  \\ \hline
-        Entradas & Backlog do Programa\\ \hline
-        Saídas   & Backlog do Time \\ \hline
+        Nome     & Levantar Histórias da Release  \\ \hline
+        Objetivo & Atividade para levantar histórias de usuários, relacionadas as \textit{Features}  levantadas, em alto nível, sem detalhamentos. Aqui é necessária a aprovação do Gerente para sair da atividade.  \\ \hline
+        Entradas & \textit{Backlog} do Programa\\ \hline
+        Saídas   & \textit{Backlog} do Time \\ \hline
         Papel Responsável   & Gerente de Programa. \\ \hline
       \end{tabular}
-      \caption{Atividade: Levatar Histórias}
+      \caption{Atividade: Levantar Histórias da Release}
       \label{tabela:atividade7}
   \end{table}
 
@@ -276,9 +272,9 @@ de desenvolvimento necessárias para contemplar o épico.
         \hline
         ID       & 08   \\ \hline
         Nome     & Planejar Releases  \\ \hline
-        Objetivo & Atividade para planejar as releases da iteração, irá gerá o roadmap e o program backlog com as features priorizadas e organizada em uma linha do tempo de entregas. São definidos os objetivos de cada release. É realizada uma validação com o cliente a é necessária a aprovação do Gerente. Após essa atividade é realizado em paralelo a Gerência de Mudanças. \\ \hline
-        Entradas & Backlog do Time, Backlog do Programa. \\ \hline
-        Saídas   & Backlog do Programa, RoadMap \\ \hline
+        Objetivo & Atividade para planejar as releases da iteração, irá gerá o \textit{Roadmap}e o program \textit{Backlog} com as \textit{Features}  priorizadas e organizada em uma linha do tempo de entregas. São definidos os objetivos de cada release. É realizada uma validação com o cliente a é necessária a aprovação do Gerente. Após essa atividade é realizado em paralelo a Gerência de Mudanças. \\ \hline
+        Entradas & \textit{Backlog} do Time, \textit{Backlog} do Programa. \\ \hline
+        Saídas   & \textit{Backlog} do Programa, \textit{Roadmap}\\ \hline
         Papel Responsável   & Gerente de Programa. \\ \hline
       \end{tabular}
       \caption{Atividade: Planejar Releases}
@@ -296,7 +292,7 @@ de desenvolvimento necessárias para contemplar o épico.
         Saídas   & Pacote de Software. \\ \hline
         Papel Responsável   & Gerente de Programa. \\ \hline
       \end{tabular}
-      \caption{Atividade: Planejar Releases}
+      \caption{Atividade: Integrar Módulos de Software}
       \label{tabela:atividade18}
   \end{table}
 
@@ -311,12 +307,12 @@ de desenvolvimento necessárias para contemplar o épico.
         Saídas   & -- \\ \hline
         Papel Responsável   & Gerente de Programa. \\ \hline
       \end{tabular}
-      \caption{Atividade: Planejar Releases}
+      \caption{Atividade: Entregar Release}
       \label{tabela:atividade16}
   \end{table}
 
-\subsection{Time}
-  \subsubsection{Processo}
+\section{Time}
+  \subsection{Processo}
 
   \begin{figure}[H]
       \centering
@@ -325,9 +321,9 @@ de desenvolvimento necessárias para contemplar o épico.
       \label{fig:time}
   \end{figure}
 
-  \subsubsection{Papéis}
+  \subsection{Papéis}
 
-\textbf{Dono do Produto}: Responsável por definir, manter e priorizar o backlog do time,
+\textbf{Dono do Produto}: Responsável por definir, manter e priorizar o \textit{Backlog} do time,
 elaborar e validade as histórias de usuário, participar do planejamento e validação
 da Sprint de tal modo a agilizar a execução de programas prioritários, mantendo a
 integridade conceitual e técnica dos recursos ou componentes do time. Possui um papel
@@ -339,24 +335,24 @@ a dirigir os esforços da equipe para a melhora continua.
 \textbf{Team}: São os indivíduos capazes de definir, construir e testar em uma interação
 de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Produto.
 
-  \subsubsection{Artefatos}
+  \subsection{Artefatos}
 
 \begin{description}
-  \item[A - Backlog do Time]
+  \item[A - \textit{Backlog} do Time]
   Tem como conteúdo, basicamente todas as coisa que o time deve fazer para gerar
   os pacotes de software e entregar valor para o cliente. É composto por histórias
   de usuário, histórias técnicas, defeitos, necessidades de infraestrutura, necessidades
   do time, refatoração, e qualquer outra coisa que o time precisa fazer. Muitas entidades
-  contribuem para a geração do backlog do time como representado na imagem abaixo:
+  contribuem para a geração do \textit{Backlog} do time como representado na imagem abaixo:
 
   \begin{figure}[H]
       \centering
     \includegraphics[keepaspectratio=true,scale=0.3]{figuras/TeamBacklog.eps}
-      \caption{Estruturação do backlog do time.}
+      \caption{Estruturação do \textit{Backlog} do time.}
       \label{fig:backlog}
   \end{figure}
 
-  Nota-se que na criação do backlog de time as features são ramificadas em pequenas histórias.
+  Nota-se que na criação do \textit{Backlog} de time as \textit{Features}  são ramificadas em pequenas histórias.
 
 
   \item[B - Lista de melhorias e Correções]
@@ -366,7 +362,7 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
 \end{description}
 
 
-  \subsubsection{Atividades}
+  \subsection{Atividades}
 
   \begin{table}[H]
     \centering
@@ -374,9 +370,9 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
         \hline
         ID       & 09   \\ \hline
         Nome     & Detalhar Histórias de Usuário  \\ \hline
-        Objetivo & Serão detalhados as histórias relativas as feature corrente, como principal objetivo definir os critériaos de aceitação para teste das mesmas.  \\ \hline
-        Entradas & Roadmap, Backlog do Time\\ \hline
-        Saídas   & Backlog do Time (Refinado) \\ \hline
+        Objetivo & Serão detalhados as histórias relativas as \textit{Features}  corrente, como principal objetivo definir os critériaos de aceitação para teste das mesmas.  \\ \hline
+        Entradas & Roadmap, \textit{Backlog} do Time\\ \hline
+        Saídas   & \textit{Backlog} do Time (Refinado) \\ \hline
         Papel Responsável   & Gerente de Produto. \\ \hline
       \end{tabular}
       \caption{Atividade: Detalhar Histórias de Usuário}
@@ -390,8 +386,8 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
         ID       & 10   \\ \hline
         Nome     & Levantar e Priorizar Necessidades do Time  \\ \hline
         Objetivo & Serão identificados os spikes, necessidades que o time precisa suprir durante a sprint, para evoluir.  \\ \hline
-        Entradas & Backlog do Time (Refinado)\\ \hline
-        Saídas   & Backlog do Time (Refinado) \\ \hline
+        Entradas & \textit{Backlog} do Time (Refinado)\\ \hline
+        Saídas   & \textit{Backlog} do Time (Refinado) \\ \hline
         Papel Responsável   & Gerente de Produto. \\ \hline
       \end{tabular}
       \caption{Atividade: Levantar e Priorizar Necessidades do Time}
@@ -405,8 +401,8 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
         ID       & 11   \\ \hline
         Nome     & Planejar Sprints  \\ \hline
         Objetivo & Serão  organizadas as histórias e tarefas em sprints. É necessária a aprovação do Gerente de produto. Após a atividade é realizada a Gerência de mudança em paralelo.  \\ \hline
-        Entradas & Backlog do Time (Refinado)\\ \hline
-        Saídas   & Backlog do Time (Refinado) \\ \hline
+        Entradas & \textit{Backlog} do Time (Refinado)\\ \hline
+        Saídas   & \textit{Backlog} do Time (Refinado) \\ \hline
         Papel Responsável   & Gerente de Portfólio. \\ \hline
       \end{tabular}
       \caption{Atividade: Planejar Sprints}
@@ -420,7 +416,7 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
         ID       & 12   \\ \hline
         Nome     & Desenvolver  Sprint  \\ \hline
         Objetivo & Subprocesso de desenvolvimento da sprint, onde ocorrerá a codificação de testes e histórias, e validação com o usuário.  \\ \hline
-        Entradas & Backlog do Time (Refinado)\\ \hline
+        Entradas & \textit{Backlog} do Time (Refinado)\\ \hline
         Saídas   & Módulo de Software. \\ \hline
         Papel Responsável   & Mestre Scrum e Time. \\ \hline
       \end{tabular}
@@ -436,14 +432,14 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
         Nome     & Retrospectiva da Sprint  \\ \hline
         Objetivo & Aqui serão apresentados os componentes desenvolvidos e caso haja uma próxima iteração, será preparado o ambiente para a mesma. Apos a atividade é realizada a Gerência de Mudanças em Paralelo.  \\ \hline
         Entradas & Módulo de Software. \\ \hline
-        Saídas   & BackLog do Time(Atualizado). \\ \hline
+        Saídas   & \textit{Backlog} do Time(Atualizado). \\ \hline
         Papel Responsável   & Gerente de Produto. \\ \hline
       \end{tabular}
       \caption{Atividade: Retrospectiva da Sprint}
       \label{tabela:atividade13}
   \end{table}
 
-  \subsubsection{Sub-processo de Desenvolvimento}
+  \subsection{Sub-processo de Desenvolvimento}
 
   Aqui será aberto o sub-process de Desenvolvimento, para uma demonstração de suas atividades, o sub-processo tem como principal objetivo
   engregar um módulo de software de qualidade, validado com o cliente.
@@ -462,8 +458,8 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
           \hline
           ID       & 14   \\ \hline
           Nome     & Desenvolver Histórias  \\ \hline
-          Objetivo & Items do Backlog do Time serão desenvolvidos  \\ \hline
-          Entradas & Backlog do Time (Refinado)\\ \hline
+          Objetivo & Items do \textit{Backlog} do Time serão desenvolvidos  \\ \hline
+          Entradas & \textit{Backlog} do Time (Refinado)\\ \hline
           Saídas   & Candidato a versões de Software \\ \hline
           Papel Responsável   & Time. \\ \hline
         \end{tabular}
@@ -476,9 +472,9 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
         \begin{tabular}{| m{5em} | m{10cm} |}
           \hline
           ID       & 15   \\ \hline
-          Nome     & Testar Histórias Densenvolvidas  \\ \hline
-          Objetivo & Items do Backlog do Time serão testados internamente. Caso não passe no teste, Precisa ser corrigido para sair dessa atividade.  \\ \hline
-          Entradas & Backlog do Time (Refinado)\\ \hline
+          Nome     & Testar Histórias Desenvolvidas  \\ \hline
+          Objetivo & Itens do \textit{Backlog} do Time serão testados internamente. Caso não passe no teste, Precisa ser corrigido para sair dessa atividade.  \\ \hline
+          Entradas & \textit{Backlog} do Time (Refinado)\\ \hline
           Saídas   & Versão de Software \\ \hline
           Papel Responsável   & Time. \\ \hline
         \end{tabular}
@@ -517,15 +513,15 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
     \end{table}
 
 
-\subsection{Gerência de Mudança}\label{sec:gerencia}
+\section{Gerência de Mudança}\label{sec:gerencia}
 
   Este sub-processo é responsável por manter a rastreabilidade e concistência dos requisitos.
   Está presente em todos os nível do processo, uma vez que podem haver mudanças que impactam todos
   os níveis. Por exemplo: Suponha que haja uma mudança durante o desenvolvimento de uma sprint.
-  Essa mudança deve ser atualizada no backlog do time, caso essa nova história não esteja mapeada com
-  uma feature, deve-se atualizar o backlog do programa e o mesmo para o backlog do portifólio.
+  Essa mudança deve ser atualizada no \textit{Backlog} do time, caso essa nova história não esteja mapeada com
+  uma feature, deve-se atualizar o \textit{Backlog} do programa e o mesmo para o \textit{Backlog} do portfólio.
 
-\subsubsection{Processo}
+\subsection{Processo}
   \begin{figure}[H]
       \centering
     \includegraphics[keepaspectratio=true,scale=0.6]{figuras/gerencia.eps}
@@ -533,12 +529,12 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
       \label{fig:gerencia}
   \end{figure}
 
-\subsubsection{Papéis}
+\subsection{Papéis}
 
   \textbf{GERENTE DE PORTFÓLIO}: No tratamento de mudanças, não haverá um papel especifico devido
 à dimensão do projeto, cabendo a ele a responsabilidade de também gerir mudanças, caso necessário.
 
-\subsubsection{Artefatos}
+\subsection{Artefatos}
 
 \begin{description}
   \item[A - Solicitação de Mudança: ]
@@ -550,7 +546,7 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
   ou recusa de uma mudança, e serve como base para realização das mudanças.
 \end{description}
 
-\subsubsection{Atividades}
+\subsection{Atividades}
 
 \begin{table}[H]
   \centering
@@ -578,7 +574,7 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
       Saídas   & -- \\ \hline
       Papel Responsável   & Gerente de Portfólio. \\ \hline
     \end{tabular}
-    \caption{Atividade: Atualizar Backlog do Time}
+    \caption{Atividade: Implementar Mudança}
     \label{tabela:atividade21}
 \end{table}
 
@@ -593,21 +589,6 @@ de curto tempo. Inclui desenvolvedores, testadores, um Scrum Master e Dono do Pr
       Saídas   & Artefatos Atualizados  \\ \hline
       Papel Responsável   & Gerente de Portfólio. \\ \hline
     \end{tabular}
-    \caption{Atividade: Atualizar Backlog do Programa}
-    \label{tabela:atividade22}
-\end{table}
-
-\begin{table}[H]
-  \centering
-    \begin{tabular}{| m{5em} | m{10cm} |}
-      \hline
-      ID       & 22   \\ \hline
-      Nome     & Atualizar Backlog do Portifólio  \\ \hline
-      Objetivo & Após aprovado o desenvolvimento do requisito, a documentação tem que ser atualizada para garantir a rastreabilidade do mesmo.  \\ \hline
-      Entradas & Mudanças \\ \hline
-      Saídas   & Backlog do Portifólio Atualizado \\ \hline
-      Papel Responsável   & Gerente de Portfólio. \\ \hline
-    \end{tabular}
-    \caption{Atividade: Atualizar Backlog do Portifólio}
+    \caption{Atividade: Atualizar Artefatos}
     \label{tabela:atividade22}
 \end{table}

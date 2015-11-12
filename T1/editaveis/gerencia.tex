@@ -1,3 +1,113 @@
 \chapter[Gerenciamento de Requisitos]{Gerenciamento de Requisitos}\label{cap1}
 \section{Rastreabilidade de Requisitos}
+  Rastreabilidade é a propriedade de uma especificação de requisitos que reflete a
+facilidade de encontrar os requisitos relacionados (SOMMERVILLE, 2007, p. 108).
+
+  Assim a rastreabilidade se torna vital a qualquer processo de software, pois a partir de
+uma rastreabilidade bi-direcional descrita por (DAVIS, 1993) sendo a capacidade de rastrear um
+requisito até seus refinamentos é definida como rastrear para frente (Forwards), e a de
+rastrear um refinamento até sua origem é definida como rastrear para trás (Backwards) é possível
+rastrear objetos de origem/destino a partir de qualquer ponto, refletindo a qualidade que (PRIBERAM, 2013)
+diz: Denota a qualidade do que é rastreável. A capacidade para acompanhar o percurso de um produto, ou de
+conhecer o seu processo de produção, manipulação, transformação, embalagem ou expedição.
+
+  Assim, neste projeto tomamos como estratégia a rastreabilidade bi-direcional dos requisitos, garantindo
+   que a partir de um tema de investimento seja possível rastrear todas as suas derivações,
+como ilustrado no esquema abaixo:
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/traceability.eps}
+    \caption{Mapa Mental - Ilustração de rastreabilidade de requisitos}
+    \label{fig:processo}
+\end{figure}
+
 \section{Atributos de Requisito}
+
+  Atributos são uma fonte muito importante de informação sobre requisitos é a partir deles que se sabe a
+origem, a sua importância relativa e a data em que foi criado. Se criados apropriadamente,
+eles podem fornecer informações significantes sobre o estado do sistema.
+Assim como é possível executar consultas para encontrar todos os requisitos
+concluídos ou de alta prioridade.
+  Dentre os tipos de atributos existentes, iremos utilizar:
+\subsection{Benefício}
+  Indica o grau de benefício ou prioridade dos requisitos em relação às
+expectativas dos Fornecedores de Requisitos.
+
+\begin{table}[H]
+  \centering
+    \begin{tabular}{| m{5em} | m{10cm} |}
+      \hline
+      Crítico     & Requisitos essenciais cujo fracasso em sua implementação significa que o sistema não irá atender as necessidades dos interessados. Imprescindível que seja atendido pelo sistema, condição fundamental para o sucesso do projeto   \\ \hline
+      Importante & Requisitos importantes para a eficácia ou eficiência do sistema. Sua não implementação afeta a satisfação do usuário e/ou o valor agregado do produto e o não atendimento não determina o fracasso do projeto. \\ \hline
+      Útil & Requisitos úteis, porém menos críticos, sendo usados menos freqüentemente. Não possui muito significado para a satisfação do usuário e pode deixar de ser atendida.   \\ \hline
+    \end{tabular}
+    \caption{Atributo: Benefício }
+    \label{tabela:atributo_beneficio}
+\end{table}
+
+\subsection{Estabilidade}
+  Indica o grau de maturidade e confiabilidade em relação ao entendimento e
+comprometimento de um requisito entre os envolvidos do projeto.
+
+\begin{table}[H]
+  \centering
+    \begin{tabular}{| m{5em} | m{10cm} |}
+      \hline
+      Alta     & Deve indicar requisitos que possuem alto grau de estabilidade. O entendimento pela Equipe de Projeto e pelos Fornecedores de Requisitos é evidente e a probabilidade de ocorrência de mudanças é baixa.   \\ \hline
+      Média & Requisitos cuja   probabilidade de ocorrência de mudanças é considerável. Alguns fatores que determinam esse valor são: requisitos ainda não entendidos completamente pela equipe de projeto ou com algumas pendências de definições por parte do Fornecedor do Requisito. \\ \hline
+      Baixa & Requisitos cuja mudança é certa, devido à baixa maturidade do mesmo. Requisitos altamente complexos, requisitos com muitas pendências de definição, requisitos com   histórico de mudanças elevadas e requisitos com influências externas (Leis, outros sistemas) são alguns fatores que influenciam para esse valor.   \\ \hline
+    \end{tabular}
+    \caption{Atributo: Estabilidade }
+    \label{tabela:atributo_estabilidade}
+\end{table}
+
+\subsection{Complexidade}
+  Indica o nível de esforço necessário ou o quão difícil é a implementação do requisito.
+\begin{table}[H]
+  \centering
+    \begin{tabular}{| m{5em} | m{10cm} |}
+      \hline
+      Pontos     &  Pontos de de 0 a 100 na escala fibonacci que indicam o nível de esforço  \\ \hline
+  \end{tabular}
+  \caption{Atributo: Complexidade }
+    \label{tabela:atributo_estabilidade}
+\end{table}
+
+\subsection{Situação}
+   Indica a situação atual de um requisito.
+\begin{table}[H]
+  \centering
+    \begin{tabular}{| m{5em} | m{10cm} |}
+      \hline
+      Proposto     & Indica requisitos que foram solicitados pelos Fornecedores de Requisitos, mas ainda estão em análise pela Equipe de Projeto ou pelo Cliente.   \\ \hline
+      Aprovado & Requisito aprovado e incorporado ao escopo do sistema. \\ \hline
+      Cancelado & Requisito que foi cancelado. Para ser cancelado o requisito pode estar Aprovado, e neste caso será retirado do escopo do sistema, ou pode estar simplesmente Proposto.   \\ \hline
+    \end{tabular}
+    \caption{Atributo: Situação }
+    \label{tabela:atributo_estabilidade}
+\end{table}
+
+\subsection{Responsável}
+  Indica o nome do responsável na Equipe de Projeto pelo requisito.
+\begin{table}[H]
+  \centering
+    \begin{tabular}{| m{5em} | m{10cm} |}
+      \hline
+      Membro da Equipe     & Estabelece o membro da equipe responsável no momento pelo requisito. Pode ser alterado durante o tempo.   \\ \hline
+    \end{tabular}
+    \caption{Atributo: Responsável }
+    \label{tabela:atributo_estabilidade}
+\end{table}
+
+\subsection{Observações}
+  Atributo livre para registro de observações como pendências ou problemas que atualmente está ocorrendo com o requisito.
+\begin{table}[H]
+  \centering
+    \begin{tabular}{| m{5em} | m{10cm} |}
+      \hline
+      Texto Livre     & Importante recurso   para que o Analista de Requisitos ou o Coordenador de Projetos registre   pendências encontradas no desenvolvimento do requisito.   \\ \hline
+    \end{tabular}
+    \caption{Atributo: Observações }
+    \label{tabela:atributo_estabilidade}
+\end{table}

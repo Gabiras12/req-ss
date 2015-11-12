@@ -1,4 +1,4 @@
-\chapter[Aboradagem de ER]{Aboradagem de ER}\label{cap3}
+\chapter[Abordagem de ER]{Abordagem de ER}\label{cap3}
 
 Nos dias atuais, a necessidade de automatização de processos se faz cada vez mais
 presente. Processos são essenciais dentro de qualquer organização em qualquer área
@@ -102,7 +102,7 @@ Programa(Tático), Time(Operacional), como ilustrado na imagem \ref{fig:safe},e 
 
 Pode-se entender como conceito chave da maturidade de processos, a forma sistemática
 a qual times considerados maduros realizam suas atividades, em comparação com o modo
-de agir de times imaturos, que geralmente utilizam de abordagens criadas espontaneamente.
+de agir de times imaturos, que geralmente utilizam de abordagens criadas espontaneamente.\cite{artigonal}
 
 Em software, os modelo de maturidade são utilizados para:
 
@@ -117,7 +117,7 @@ Em software, os modelo de maturidade são utilizados para:
 O CMMI é um modelo que serve de base para o desenvolvimento e a avaliação da maturidade de uma organização.
 
 O CMMI aborda a gerenciamento de requisitos, manipulação de riscos, medição de desempenho,
-planejamento de trabalho e tomada de decisão.
+planejamento de trabalho e tomada de decisão.\cite{magno}
 
 No CMMI, um time pode escolher duas representações para a melhoria dos seus processos,
 por estágio ou continua.
@@ -126,18 +126,22 @@ Em estágios, têm-se um caminho específico para a melhoria, como pode ser vist
 
 \begin{figure}[H]
     \centering
-  \includegraphics[keepaspectratio=true,scale=0.3]{figuras/cmmi.eps}
+  \includegraphics[keepaspectratio=true,scale=0.7]{figuras/cmmi.eps}
     \caption{Visão geral do CMMI}
     \label{fig:cmmi}
 \end{figure}
 
 \subsection{MPS.BR}
 
-O modelo MPS-BR é dividido em níveis de maturidade, como ilustra a image x.
+O modelo MPS-BR baseia-se no CMMI,
+porém é voltado para a realidade brasileira,
+principalmente micro, pequenas e medias empresas.
+Esse modelo é dividido em níveis de maturidade,
+como ilustra a imagem.\cite{softex}
 
 \begin{figure}[H]
     \centering
-  \includegraphics[keepaspectratio=true,scale=0.3]{figuras/mpsbr.eps}
+  \includegraphics[keepaspectratio=true,scale=0.7]{figuras/mpsbr.eps}
     \caption{Visão geral do MPS.BR}
     \label{fig:mps}
 \end{figure}
@@ -190,15 +194,35 @@ Requisitos e Desenvolvimento de Requisitos respectivamente.
   \item[Gerência de Requisitos] \hfill \\
   Busca gerenciar os requisitos do produto e do projeto, assim como identificar
   inconsistencias entre os requisitos, os planos de projeto e os produtos de trabalho do projeto.
+
+  \textbf{Resultados esperados}:
+  \begin{itemize}
+  \item  GRE 1. O entendimento dos requisitos é obtido junto aos fornecedores de requisitos;
+  \item  GRE 2. Os requisitos são avaliados com base em critérios objetivos e um comprometimento da equipe técnica com estes requisitos é obtido;
+  \item  GRE 3. A rastreabilidade bidirecional entre os requisitos e os produtos de trabalho é estabelecida e mantida;
+  \item  GRE 4. Revisões em planos e produtos de trabalho do projeto são realizadas visando identificar e corrigir inconsistências em relação aos requisitos;
+  \item  GRE 5. Mudanças nos requisitos são gerenciadas ao longo do projeto.
+\end{itemize}
+
+
   \item[Desenvolvimento de Requisitos] \hfill \\
   Busca definer os requisitos do cliente, do produto e dos components do produto.
+
+  \textbf{Resultados esperados}:
+  \begin{itemize}
+\item  DRE 1. As necessidades, expectativas e restrições do cliente, tanto do produto quanto de suas interfaces, são identificadas;
+\item  DRE 2. Um conjunto definido de requisitos do cliente é especificado e priorizado a partir das necessidades, expectativas e restrições identificadas;
+\item  DRE 3. Um conjunto de requisitos funcionais e não-funcionais, do produto e dos componentes do produto que descrevem a solução do problema a ser resolvido, é definido e mantido a partir dos requisitos do cliente;
+\item  DRE 4. Os requisitos funcionais e não-funcionais de cada componente do produto são refinados, elaborados e alocados;
+\item  DRE 5. Interfaces internas e externas do produto e de cada componente do produto são definidas;
+\item  DRE 6. Conceitos operacionais e cenários são desenvolvidos;
+\item  DRE 7. Os requisitos são analisados, usando critérios definidos, para balancear as necessidades dos interessados com as restrições existentes;
+\item  DRE 8. Os requisitos são validados.
+\end{itemize}
+
 \end{description}
 
-
-
-
-
-\section{Mapeamento do Contexto vs Abordagens}
+\section{Mapeamento do Contexto vs Abordagens} \label{mapeamento_do_contexto}
 
 Considerando as duas influencias de abordagem foram levantadas as seguintes variáveis
 relacionadas ao contextos do time, cliente, ambiente de trabalho, e projeto:
@@ -207,25 +231,25 @@ relacionadas ao contextos do time, cliente, ambiente de trabalho, e projeto:
   \item \label{mapeamento:1} A equipe que trabalhará conta com apenas 5 membros, o que permite um
   auto-gerenciamento com mais facilidade, sendo de grande impacto definir um
   papel especifico apenas para algum membro cuidar do gerenciamento como é definido no RUP.
-  \item A equipe atual já trabalhou com ambas as abordagens, e possui mais facilidade
+  \item \label{mapeamento:2} A equipe atual já trabalhou com ambas as abordagens, e possui mais facilidade
   em implementar a abordagem ágil, devido a experiências anteriores.
-  \item A equipe atual, é uma equipe que nunca trabalhou junta, o que pode ser um
+  \item \label{mapeamento:3} A equipe atual, é uma equipe que nunca trabalhou junta, o que pode ser um
   fator positivo para se escolher a abordagem tradicional, por ser mais específica
   e clara na descrição das atividades, e com documentação mais forte facilitando a comunicação.
-  \item A equipe tem disponibilidade para encontros presenciais 4 vezes na semana
+  \item \label{mapeamento:4} A equipe tem disponibilidade para encontros presenciais 4 vezes na semana
   e 7 vezes na semana por video conferência, o que facilita a implementação da abordagem ágil.
-  \item A equipe não possui papeis específicos no projeto e nem uma hierarquia de
+  \item \label{mapeamento:5} A equipe não possui papeis específicos no projeto e nem uma hierarquia de
   responsabilidades, ou seja, há um compartilhamento de responsabilidades e espírito
   de colaboração, alinhado as práticas ágeis.
-  \item O cliente possui grande disponibilidade por se encontrar no mesmo ambiente
+  \item \label{mapeamento:6} O cliente possui grande disponibilidade por se encontrar no mesmo ambiente
   de trabalho da equipe, que é a Faculdade do Gama da Universidade de Brasília,
   o que facilita a aplicação da abordagem ágil que enfoca na participação ativa do cliente.
-  \item O contexto do problema é criar software para otimizar algum gargalo no processo
+  \item \label{mapeamento:7} O contexto do problema é criar software para otimizar algum gargalo no processo
   de uma organização, um requisito bem definido com possivelmente poucas mudanças.
-  \item Em contrapartida o problema depende de uma terceira entidade que é o cliente
+  \item \label{mapeamento:8} Em contrapartida o problema depende de uma terceira entidade que é o cliente
   do cliente, o que pode causar uma inconsistencia nas expectativas, assim o acompanhamento
   próximo do cliente é essencial para sucesso.
-  \item O projeto possui um tempo limitado de 45 dias, um tempo consideravelmente curto,
+  \item \label{mapeamento:9} O projeto possui um tempo limitado de 45 dias, um tempo consideravelmente curto,
   o que favorece a escolha da abordagem ágil que constituie-se em pequenas iterações,
   e também em menos burocracia para se adaptar as mudanças de requisitos.
 \end{enumerate}
@@ -234,8 +258,8 @@ relacionadas ao contextos do time, cliente, ambiente de trabalho, e projeto:
 
 Para o desenvolvimento deste trabalho, foi definida uma abordagem híbrida.
 Sendo sua base fundamental no SAFe e nas práticas ágeis levando em consideração
-caracteristicas e atividades do RUP, uma vez que - como descrito na sessão 3.4
-- os aspectos de equipe mapeados(\ref{mapeamento:1},2,4,5,6,7,8 e 9) com as abordagens bases
+caracteristicas e atividades do RUP, uma vez que - como descrito na sessão 2.4
+- os aspectos de equipe mapeados(\ref{mapeamento:1},\ref{mapeamento:2},\ref{mapeamento:4},\ref{mapeamento:5},\ref{mapeamento:6},\ref{mapeamento:7},\ref{mapeamento:8} e \ref{mapeamento:9}) com as abordagens bases
 indicam que a utilização das práticas ágeis tornariam a execução do projeto mais
 viável, porém o aspecto de equipe 3 apresenta um risco ao projeto caso não seja
 devidamente utilizado no processo do projeto. Tornando assim evidente a necessidade
