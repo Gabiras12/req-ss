@@ -4,22 +4,115 @@
 
 \subsection{Finalidade}
 
+Esta seção especifica os objetivos desse documento, o problema solucionado e a visão geral da solução proposta.
+
 \subsection{Objetivo}
+
+Esse documento, têm como objetivo geral, fornecer informações referentes a visão geral do Sistema de Gestão de Desenvolvimento do Ministério das Comunicações. Esse sistema trás uma solução às dificuldades no acompanhamento do processo de manutenção dos sistemas internos do ministérios.
 
 \subsection{Visão Geral}
 
+Nas tabelas abaixo, encontra-se a visão geral da solução para o problema identificado:
 
-\section{Usuários}
+\begin{table}[H]
+\begin{tabular}{|l| p{11cm} |}
+	\hline
+	\textbf{Problema} & Gerir Demanda\tabularnewline
+	\hline
+	\textbf{Para} & O gerente e a equipe de desenvolvimento \tabularnewline
+	\hline
+	\textbf{Quem} & Gere e desenvolve as demandas aprovadas de manutenção do ministério\tabularnewline
+	\hline
+	\textbf{A} & Ferramenta de Gestão do Desenvolvimento\tabularnewline
+	\hline
+	\textbf{É uma} & Ferramenta que organiza sistematicamente a demanda a ser desenvolvida\tabularnewline
+	\hline
+	\textbf{Que} & Facilita e agiliza o trabalho da equipe de desenvolvimento\tabularnewline
+	\hline
+	\textbf{Diferente} & Da situação atual que tudo é feito manualmente\tabularnewline
+	\hline
+	\textbf{Nossa Solução} & Automatiza a gestão e centraliza as informações das demandas a serem desenvolvidas\tabularnewline
+	\hline
+\end{tabular}
+\caption{Gerir Demandas}
+\label{Visao_Geral_Gerir_Demandas}
+\end{table}
 
-\subsection{Descrição dos Usuários}
+\begin{table}[H]
+\begin{tabular}{|l| p{11cm} |}
+	\hline
+	\textbf{Problema} & Acompanhar Status de Demanda\tabularnewline
+	\hline
+	\textbf{Para} & O gerente e a equipe de desenvolvimento\tabularnewline
+	\hline
+	\textbf{Quem} & Necessita saber o andamento das demandas\tabularnewline
+	\hline
+	\textbf{A} & Visibilidade do andamento da demanda\tabularnewline
+	\hline
+	\textbf{É uma} & Forma de informar para ambos os usuários como está a demanda\tabularnewline
+	\hline
+	\textbf{Que} & Facilita o feedback para o cliente o planejamento do desenvolvimento\tabularnewline
+	\hline
+	\textbf{Diferente} & Da situação atual que o cliente só tem informações da produção da demanda no fim do desenvolvimento e o gestor tem toda a informação de forma manual\tabularnewline
+	\hline
+	\textbf{Nossa Solução} & Unificar a informação do status das demandas distribuindo a informação dinamicamente de acordo com a necessidade de visualização de cada usuário\tabularnewline
+	\hline
+\end{tabular}
+\caption{Gerir Demandas}
+\label{Visao_Geral_Acompanhar_Status}
+\end{table}
+
+\section{Descrição dos Usuários}
+
+O produto referente a esse documento de visão tem como usuário os funcionários do Ministério das comunicações a que atuam na area de manutenção do sistema interno do ministério. Na sistuação atual  há dificuldades no acompanhamento do processo de manutenção que, resumidamente, consiste em uma requisição de melhoria, em seguida a implementação e por fim uma avaliação do cliente. 
+
+\subsection{Usuários}
+
+\begin{table}[H]
+\begin{tabular}{|l| p{7cm} | p{6cm} |}
+	\hline
+	\textbf{Nome} & \textbf{Descrição} & \textbf{Responsabilidades}\tabularnewline
+	\hline
+	Cliente & & \tabularnewline
+	\hline
+	Gerente de Manutenção & & \tabularnewline
+	\hline
+	Desenvolvedor & & \tabularnewline
+	\hline
+\end{tabular}
+\caption{Usuários}
+\label{Usuarios}
+\end{table}
 
 \subsection{Ambiente do Usuário}
 
+O acesso dos usuários ao sistema se se dão a partir de diferentes sistemas operacionais, destacando-se o Windows e destribuições Linux, portanto um sistema multiplataforma ou que possa ser utilizado independentemente do sistema operacional se torna obrigatório. As aplicações Web se tornam as melhores soluções para o problema, uma vez que são executadas em diferentes sistemas operacionais sem perda de performance.
 
 \section{Visão Geral do Sistema}
 
+Esse item mostra uma visão bem ampla do sistema, já trazendo soluções e requisitos pertencentes ao mesmo.
+
 \subsection{Perspectiva do Sistema}
 
+Como mencionado anteriormente, o sistema deverá ser desenvolvido em ambiente Web e para a escolha do framework a ser utilizado, três plataformas principais foram analisadas sob diversos aspectos, como mostrados na tabela a seguir:
+
+\begin{table}[H]
+\begin{tabular}{| >{\centering}m{4cm}<{\centering} | >{\centering}m{4cm}<{\centering} | >{\centering}m{4cm}<{\centering} | >{\centering}m{4cm}<{\centering} |}
+	\hline
+	& \textbf{Ruby on Rails} & \textbf{DJANGO} & \textbf{NODE.js}\tabularnewline
+	\hline
+	\textbf{Linguagem de Programação} & Ruby & Python & JavaScript\tabularnewline
+	\hline
+	\textbf{Memória Recomendada} & 1GB & 128MG & 256MB\tabularnewline
+	\hline
+\end{tabular}
+\caption{Plataformas do Sistema}
+\label{Plataformas_do_Sistema}
+\end{table}
+
+\subsection{Suposições e Depedências}
+
+Caso ocorram mudanças nos épicos, nas features e/ou em quaisquer itens que foram identificados e estão especificados neste documento, essas mudanças devem ser refletidas no próprio, a fim de evitar a perda da sua integridade.
 
 \section{Features}
 
