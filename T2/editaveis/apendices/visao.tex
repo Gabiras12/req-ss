@@ -99,13 +99,13 @@ O produto referente a esse documento de visão tem como usuário os funcionário
 \begin{table}[H]
 	\begin{tabular}{|l| p{7cm} | p{6cm} |}
 		\hline
-		\textbf{Nome} & \textbf{Descrição} & \textbf{Responsabilidades}\tabularnewline
+		\textbf{Nome} & \textbf{Descrição}\tabularnewline
 		\hline
-		Cliente & & \tabularnewline
+		Cliente & Usuário do sistema responsável pelo pedido da demanda\tabularnewline
 		\hline
-		Gerente de Manutenção & & \tabularnewline
+		Gerente de Manutenção & Responsável pela criação e geração de relatórios da demanda\tabularnewline
 		\hline
-		Desenvolvedor & & \tabularnewline
+		Desenvolvedor & Responsável pelo desenvolvimento e atualização do estado da demanda\tabularnewline
 		\hline
 	\end{tabular}
 	\caption{Usuários}
@@ -175,25 +175,28 @@ A partir dos features estabelecidos, pode-se gerar as seguintes histórias de us
 			\hline 
 			Épico & Feature & História de Usuário & Descrição & Prioridade\tabularnewline
 			\hline 
-			\hline 
-			E01 Gerenciamnto de Demandas & F01 Manutenção da Demanda & H01 Eu como desenvolvedor desejo me vincular à uma demanda para me tornar
+			\hline
+			\label{HU01}
+			E01 Gerenciamnto de Demandas & F01 Manutenção da Demanda & HU01 Eu como desenvolvedor desejo me vincular à uma demanda para me tornar
 			o responsável pelo desenvolvimento da demanda &  & Alta\tabularnewline
 			\hline 
-			E01 Gerenciamnto de Demandas & F01 Manutenção da Demanda & H02 Eu como desenvolvedor desejo mover a demanda de estado de desenvolvimento
+			\label{HU02}
+			E01 Gerenciamnto de Demandas & F01 Manutenção da Demanda & HU02 Eu como desenvolvedor desejo mover a demanda de estado de desenvolvimento
 			para indicar o fluxo de produção da demanda &  & \tabularnewline
 			\hline 
-			E01 Gerenciamnto de Demandas & F01 Manutenção da Demanda & H03 Eu como gerente desejo cadastrar demanda para ser desenvolvida &  & \tabularnewline
+			\label{HU03}
+			E01 Gerenciamnto de Demandas & F01 Manutenção da Demanda & HU03 Eu como gerente desejo cadastrar demanda para ser desenvolvida &  & \tabularnewline
 			\hline 
-			E01 Gerenciamnto de Demandas & F01 Manutenção da Demanda & H04 Eu como gerente desejo editar uma demanda cadastrada para manter a
+			E01 Gerenciamnto de Demandas & F01 Manutenção da Demanda & HU04 Eu como gerente desejo editar uma demanda cadastrada para manter a
 			consistência &  & \tabularnewline
 			\hline 
-			E01 Gerenciamento de Demandas & F02 Acompanhamento da Demanda & H05 Eu como desenvolvedor desejo visualizar a descrição da demanda para
+			E01 Gerenciamento de Demandas & F02 Acompanhamento da Demanda & HU05 Eu como desenvolvedor desejo visualizar a descrição da demanda para
 			desenvolver as especificações &  & Alta\tabularnewline
 			\hline 
-			E01 Gerenciamento de Demandas & F02 Acompanhamento da Demanda & H06 Eu como gerente desejo gerar relatório sobre as demandas para possível
+			E01 Gerenciamento de Demandas & F02 Acompanhamento da Demanda & HU06 Eu como gerente desejo gerar relatório sobre as demandas para possível
 			análise &  & \tabularnewline
 			\hline 
-			E01 Gerenciamento de Demandas & F02 Acompanhamento da Demanda & H07 Eu como usuário desejo visualizar as demandas para acompanhar o fluxo
+			E01 Gerenciamento de Demandas & F02 Acompanhamento da Demanda & HU07 Eu como usuário desejo visualizar as demandas para acompanhar o fluxo
 			de produção &  & \tabularnewline
 			\hline 
 		\end{tabular}
@@ -206,21 +209,24 @@ A partir dos features estabelecidos, pode-se gerar as seguintes histórias de us
 	\begin{turn}{90}
 		\begin{tabular}{|>{\centering}p{4cm}|>{\centering}p{4cm}|>{\centering}p{6cm}|>{\centering}p{6cm}|c|}
 			\hline 
-			E02 Gerenciamento de Usuários & F03 Manutenção de Usuários & H08 Eu como gerente desejo associar uma conta a uma categoria de acesso
+			Épico & Feature & História de Usuário & Descrição & Prioridade\tabularnewline
+			\hline 
+			\hline 
+			E02 Gerenciamento de Usuários & F03 Manutenção de Usuários & HU08 Eu como gerente desejo associar uma conta a uma categoria de acesso
 			para organizar as permissões do sistema &  & Alta\tabularnewline
 			\hline 
-			E02 Gerenciamento de Usuários & F03 Manutenção de Usuários & H09 Eu como gerente desejo desativar um usuário para manter apenas usuários
+			E02 Gerenciamento de Usuários & F03 Manutenção de Usuários & HU09 Eu como gerente desejo desativar um usuário para manter apenas usuários
 			ativos no sistema &  & \tabularnewline
 			\hline 
-			E02 Gerenciamento de Usuários & F03 Manutenção de Usuários & H10 Eu como usuários desejo criar uma conta para poder acessar o sistema &  & \tabularnewline
+			E02 Gerenciamento de Usuários & F03 Manutenção de Usuários & HU10 Eu como usuários desejo criar uma conta para poder acessar o sistema &  & \tabularnewline
 			\hline 
-			E02 Gerenciamento de Usuários & F03 Manutenção de Usuários & H11 Eu como usuários gostaria de editar minhas informações para mantê-las
+			E02 Gerenciamento de Usuários & F03 Manutenção de Usuários & HU11 Eu como usuários gostaria de editar minhas informações para mantê-las
 			atualizadas &  & \tabularnewline
 			\hline 
-			Gerenciamento de Usuários & F04 Acesso de Usuários & H12 Eu como usuários gostaria de acessar o sistema para cooperar com a
+			Gerenciamento de Usuários & F04 Acesso de Usuários & HU12 Eu como usuários gostaria de acessar o sistema para cooperar com a
 			gestão da demanda &  & Média\tabularnewline
 			\hline 
-			Gerenciamento de Usuários & F04 Acesso de Usuários & H13 Eu como usuário gostaria de recuperar minha senha para acessar ao
+			Gerenciamento de Usuários & F04 Acesso de Usuários & HU13 Eu como usuário gostaria de recuperar minha senha para acessar ao
 			sistema &  & \tabularnewline
 			\hline 
 		\end{tabular}
@@ -255,15 +261,40 @@ O sistema deve ser Web e deve funcionar no Google Chrome Versão
 
 \subsection{Outros}
 
-Abaixo estão listados os outros requisitos não funcionais do sistema.
-
-\subsubsection{Implementação}
-
-O sistema deve ser desenvolvido em Ruby on Rails.
-O sistema deve se comunicar com o banco de dados SQLite para o registro das informações.
-
-\subsubsection{Licença, Segurança e Instalação}
-
-O sistema deverá registrar os dados dos clientes de maneira sigilosa para garantir a privacidade dos mesmos.
-O sistema deve possuir um controle de acesso.
-O sistema não deve permitir que o usuário esteja logado em duas máquinas ao mesmo tempo.
+\begin{table}[H]
+	\begin{tabular}{|c|>{\centering}p{12cm}|c|}
+		\hline 
+		ID & Regra de Negócio & Vínculo\tabularnewline
+		\hline 
+		\hline 
+		RN01 & O sistema deve ser desenvolvido em Ruby on Rails. & Todo o Sistema\tabularnewline
+		\hline 
+		RN02 & O sistema deve se comunicar com o banco de dados SQLite para o registro
+		das informações. & Todo o Sistema\tabularnewline
+		\hline 
+		RN03 & O sistema deverá registrar os dados dos clientes de maneira sigilosa
+		para garantir a privacidade dos mesmos. & Todo o Sistema\tabularnewline
+		\hline 
+		RN04 & O sistema deve possuir um controle de acesso. & Todo o Sistema\tabularnewline
+		\hline 
+		RN05 & O sistema não deve permitir que o usuário esteja logado em duas máquinas
+		ao mesmo tempo. & Todo o Sistema\tabularnewline
+		\hline 
+		RN06 & Um desenvolvedor somente se vincula a uma demanda por vez. & \hyperref[HU01]{HU01}\tabularnewline
+		\hline 
+		RN07 & Um desenvolvedor sempre pegará a próxima demanda na fila de espera. & \hyperref[HU01]{HU01}\tabularnewline
+		\hline 
+		RN08 & Novas demandas entram na fila de espera. & \hyperref[HU03]{HU03}\tabularnewline
+		\hline 
+		RN09 & Demandas marcadas como urgente tem prioridade na fila de espera. & \hyperref[HU03]{HU03}\tabularnewline
+		\hline 
+		RN10 & Após uma demanda ser adicionada, o sistema envia um id para o email
+		do cliente vinculado a demanda. & \hyperref[HU03]{HU03}\tabularnewline
+		\hline 
+		RN11 & A cada mudança de estado da demanda, o sistema envia uma notificação
+		por email para os vinculados à demanda e ao gerente. & \hyperref[HU02]{HU02}\tabularnewline
+		\hline 
+	\end{tabular}
+	\caption{Regras de Negócio}
+	\label{Regra_de_Negocio}
+\end{table}
