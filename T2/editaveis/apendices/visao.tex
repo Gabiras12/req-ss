@@ -277,21 +277,28 @@ O sistema deve ser Web e deve funcionar no Google Chrome Versão
 		\hline 
 		RN04 & O sistema deve possuir um controle de acesso. & Todo o Sistema\tabularnewline
 		\hline 
-		RN05 & O sistema não deve permitir que o usuário esteja logado em duas máquinas
+		RN05 & O sistema deve possuir três níveis de acesso:
+		\begin{enumerate}
+			\item Gerente de Manutenção: Pode criar, editar, vizualizar ou excluir as demandas e gerar relatório.
+			\item Desenvolvedor: Pode vizualizar, vincular ou mover as demandas.
+			\item Cliente: Pode vizualizar as demandas vinculadas a ele.
+		\end{enumerate} & Todo o Sistema\tabularnewline
+		\hline 
+		RN06 & O sistema não deve permitir que o usuário esteja logado em duas máquinas
 		ao mesmo tempo. & Todo o Sistema\tabularnewline
 		\hline 
-		RN06 & Um desenvolvedor somente se vincula a uma demanda por vez. & \hyperref[HU01]{HU01}\tabularnewline
+		RN07 & Um desenvolvedor somente se vincula a uma demanda por vez. & \hyperref[HU01]{HU01}\tabularnewline
 		\hline 
-		RN07 & Um desenvolvedor sempre pegará a próxima demanda na fila de espera. & \hyperref[HU01]{HU01}\tabularnewline
+		RN08 & Um desenvolvedor sempre pegará a próxima demanda na fila de espera. & \hyperref[HU01]{HU01}\tabularnewline
 		\hline 
-		RN08 & Novas demandas entram na fila de espera. & \hyperref[HU03]{HU03}\tabularnewline
+		RN09 & Novas demandas entram na fila de espera. & \hyperref[HU03]{HU03}\tabularnewline
 		\hline 
-		RN09 & Demandas marcadas como urgente tem prioridade na fila de espera. & \hyperref[HU03]{HU03}\tabularnewline
+		RN10 & Demandas marcadas como urgente tem prioridade na fila de espera. & \hyperref[HU03]{HU03}\tabularnewline
 		\hline 
-		RN10 & Após uma demanda ser adicionada, o sistema envia um id para o email
+		RN11 & Após uma demanda ser adicionada, o sistema envia um id para o email
 		do cliente vinculado a demanda. & \hyperref[HU03]{HU03}\tabularnewline
 		\hline 
-		RN11 & A cada mudança de estado da demanda, o sistema envia uma notificação
+		RN12 & A cada mudança de estado da demanda, o sistema envia uma notificação
 		por email para os vinculados à demanda e ao gerente. & \hyperref[HU02]{HU02}\tabularnewline
 		\hline 
 	\end{tabular}
