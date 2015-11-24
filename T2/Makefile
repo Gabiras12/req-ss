@@ -24,11 +24,11 @@ CONTEUDO_DIR = $(addprefix $(EDITAVEIS_DIR)/, conteudo)
 CONTEUDO_SOURCES = introducao.tex processo.tex utilizacao_ferramenta.tex \
 					contexto_de_negocio.tex experiencias.tex \
 					conclusoes.tex detalhamento_historias.tex \
-					tecnica_de_elicitacao.tex
+					tecnica_de_elicitacao.tex sprint.tex
 CONTEUDO_FILES = $(addprefix $(CONTEUDO_DIR)/, $(CONTEUDO_SOURCES))
 
 APENDICES_DIR = $(addprefix $(EDITAVEIS_DIR)/, apendices)
-APENDICES_SOURCES = visao.tex
+APENDICES_SOURCES = visao.tex brainstorm.tex	
 APENDICES_FILES = $(addprefix $(APENDICES_DIR)/, $(APENDICES_SOURCES))
 
 MAIN_FILE = relatorio.tex
